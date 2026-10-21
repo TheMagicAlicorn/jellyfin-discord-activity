@@ -102,7 +102,7 @@ export async function authenticateByName(input: {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "X-Emby-Authorization": jellyfinAuthorizationHeader()
+      Authorization: jellyfinAuthorizationHeader()
     },
     body: JSON.stringify({
       Username: input.username,
